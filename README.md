@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Newsletter Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based newsletter management application with subscriber tracking functionality.
 
-## Available Scripts
+## Setup Instructions
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### `npm start`
+### Installation Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to project directory
 
-### `npm test`
+3. Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install dependencies
 
-### `npm run build`
+4. Start the application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Access the application at: http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Core Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Newsletter Management
+   - Create newsletters
+   - Preview newsletters
+   - Custom layouts
+   - Track newsletter details
 
-### `npm run eject`
+2. Subscriber Management 
+   - View subscribers list
+   - Track subscriber details
+   - Manage subscriptions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
+src/
+├── components/
+│ ├── common/
+│ │ ├── Header.js # Navigation header
+│ │ └── Sidebar.js # Side navigation
+│ ├── Newsletter/
+│ │ ├── NewsletterTable.js
+│ │ ├── NewsletterLayout.js
+│ │ ├── NewsletterPreview.js
+│ │ ├── NewsletterCreate.js
+│ │ └── NewsletterDetails.js
+│ └── Subscribe/
+│ └── SubscribersTable.js
+└── App.js # Main application file
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Available Routes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `/subscribers` - Subscriber management
+- `/newsletter` - Newsletter dashboard
+- `/newsletter/preview` - Newsletter preview
+- `/newsletter/create` - Create newsletter
+- `/newsletter/layout` - Layout management
+- `/newsletter/details/:id` - Newsletter details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- React.js - Frontend framework
+- React Router - Navigation
+- Tailwind CSS - Styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Dark theme enabled by default
+- Responsive design for all screen sizes
+- Uses React hooks for state management
 
-### Code Splitting
+## Common Issues & Solutions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you encounter build errors:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For routing issues:
+- Verify routes in App.js
+- Check BrowserRouter implementation
